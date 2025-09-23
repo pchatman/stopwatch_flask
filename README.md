@@ -19,7 +19,7 @@ A simple web-based stopwatch built with **Flask** and **JavaScript**. This app a
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/flask-stopwatch.git
+   git clone https://github.com/pchatman/stopwatch_flask
    cd stopwatch_flask
    ```
 
