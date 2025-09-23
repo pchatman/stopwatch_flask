@@ -1,0 +1,17 @@
+ /* Basic styling for the stopwatch */
+ body {
+     font-family: Arial, sans-serif;
+     text-align: center;
+     margin-top: 50px;
+     background-color: rgb(162, 162, 179);
+ }
+
+ h1 {
+     font-size: 48px;
+ }
+
+ button {
+     font-size: 24px;
+     padding: 10px 20px;
+     margin: 10px;
+ }
