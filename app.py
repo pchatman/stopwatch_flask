@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    // List of some world timezones
+    # List of some world timezones
     world_timezones = [
         {'city': 'New York', 'timezone': 'America/New_York'},
         {'city': 'London', 'timezone': 'Europe/London'},
