@@ -11,7 +11,7 @@ A simple web-based stopwatch built with **Flask** and **JavaScript**. This app a
 
 ### Tech Stack
 
-* Python (Flask)
+* Python (Flask) (Jinja2)
 * HTML, CSS, JavaScript
 
 ### How to Run
