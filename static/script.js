@@ -42,3 +42,24 @@ function reset() {
     elapsedTime = 0;
     document.getElementById('display').innerText = "00:00:00";
 }
+
+// World Clock functionality
+const updateWorldClocks = () => {
+    document.querySelectorAll('.clock').forEach((clock, index) => {
+        const timeZone = clock.getAttribute('data-timezone');
+        const formatter = new Intl.DateTimeFormat('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false,
+            timeZone: timeZone
+        });
+        const now = new Date();
+        const formattedTime = formatter.format(now);
+        clock.querySelector('.time').textContent = formattedTime;
+    });
+};
+// Update world clocks every second
+// run initially to avoid delay
+setInterval(updateWorldClocks, 1000);
+updateWorldClocks(); // Initial call to set clocks immediately
