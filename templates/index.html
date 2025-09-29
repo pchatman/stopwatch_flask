@@ -26,8 +26,8 @@
         <!-- World Clocks Section -->
         <div id="world-clocks" class="world-clocks">
             {% for location in world_timezones %}
-            <div class="clock" data-tz="{{ location.tz }}">
-                <h4>{{ location.name }}</h4>
+            <div class="clock" data-timezone="{{ location.timezone }}">
+                <h4>{{ location.city }}</h4>
                 <div class="time" id="clock-{{ loop.index }}"></div>
             </div>
             {% endfor %}
